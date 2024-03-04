@@ -7,7 +7,7 @@ from torchvision.models.detection.retinanet import RetinaNetClassificationHead
 
 def create_model(num_classes=91):
     model = torchvision.models.detection.retinanet_resnet50_fpn_v2(
-        weights=RetinaNet_ResNet50_FPN_V2_Weights.COCO_V1
+        weights=RetinaNet_ResNet50_FPN_V2_Weights.DEFAULT
     )
     num_anchors = model.head.classification_head.num_anchors
 
